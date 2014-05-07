@@ -43,6 +43,7 @@
     // The XCTAssertEqual method is does not work because it is only for C scalars, stucts, and unions
     
     XCTAssertEqualObjects([hello greetSomeone:@"someone"], @"Hello someone!", @"Hopefully...");
+    XCTAssertEqualObjects([hello greetSomeone:@"Bob"], @"Hello Bob!", @"Saying hello!");
 }
 
 @end
