@@ -1,0 +1,3 @@
+One of the big turning points in my learning of Ruby was working through the [TestFirst.org](http://testfirst.org/learn_ruby)'s Ruby materials. It was through Test First Ruby that I really started to grasp how to write methods, how to construct classes, and how things happen as a program executes in Ruby. 
+
+One of the hardest things for me with learning Objective C on Treehouse is having the feeling that I don't have a strong understanding of the basics. 

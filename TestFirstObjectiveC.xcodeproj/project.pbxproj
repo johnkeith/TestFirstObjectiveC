@@ -19,6 +19,9 @@
 		67D4F16D191A47FB0042B66B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D4F155191A47FA0042B66B /* UIKit.framework */; };
 		67D4F175191A47FB0042B66B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67D4F173191A47FB0042B66B /* InfoPlist.strings */; };
 		67D4F177191A47FB0042B66B /* TestFirstObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D4F176191A47FB0042B66B /* TestFirstObjectiveCTests.m */; };
+		67D4F181191A48380042B66B /* _START_HERE.md in Resources */ = {isa = PBXBuildFile; fileRef = 67D4F180191A48380042B66B /* _START_HERE.md */; };
+		67D4F18C191A5D4F0042B66B /* HelloTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D4F18B191A5D4F0042B66B /* HelloTestCase.m */; };
+		67D4F18F191A5DAF0042B66B /* Hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D4F18E191A5DAF0042B66B /* Hello.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		67D4F172191A47FB0042B66B /* TestFirstObjectiveCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestFirstObjectiveCTests-Info.plist"; sourceTree = "<group>"; };
 		67D4F174191A47FB0042B66B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		67D4F176191A47FB0042B66B /* TestFirstObjectiveCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFirstObjectiveCTests.m; sourceTree = "<group>"; };
+		67D4F180191A48380042B66B /* _START_HERE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = _START_HERE.md; path = TestFirstObjectiveC/_START_HERE.md; sourceTree = "<group>"; };
+		67D4F18B191A5D4F0042B66B /* HelloTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HelloTestCase.m; path = ../HelloTestCase.m; sourceTree = "<group>"; };
+		67D4F18D191A5DAF0042B66B /* Hello.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hello.h; path = ../Hello.h; sourceTree = "<group>"; };
+		67D4F18E191A5DAF0042B66B /* Hello.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hello.m; path = ../Hello.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +84,7 @@
 		67D4F145191A47FA0042B66B = {
 			isa = PBXGroup;
 			children = (
+				67D4F180191A48380042B66B /* _START_HERE.md */,
 				67D4F157191A47FA0042B66B /* TestFirstObjectiveC */,
 				67D4F170191A47FB0042B66B /* TestFirstObjectiveCTests */,
 				67D4F150191A47FA0042B66B /* Frameworks */,
@@ -107,6 +115,8 @@
 		67D4F157191A47FA0042B66B /* TestFirstObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				67D4F18D191A5DAF0042B66B /* Hello.h */,
+				67D4F18E191A5DAF0042B66B /* Hello.m */,
 				67D4F160191A47FB0042B66B /* TFOAppDelegate.h */,
 				67D4F161191A47FB0042B66B /* TFOAppDelegate.m */,
 				67D4F163191A47FB0042B66B /* Images.xcassets */,
@@ -129,6 +139,7 @@
 		67D4F170191A47FB0042B66B /* TestFirstObjectiveCTests */ = {
 			isa = PBXGroup;
 			children = (
+				67D4F18B191A5D4F0042B66B /* HelloTestCase.m */,
 				67D4F176191A47FB0042B66B /* TestFirstObjectiveCTests.m */,
 				67D4F171191A47FB0042B66B /* Supporting Files */,
 			);
@@ -220,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D4F181191A48380042B66B /* _START_HERE.md in Resources */,
 				67D4F15C191A47FB0042B66B /* InfoPlist.strings in Resources */,
 				67D4F164191A47FB0042B66B /* Images.xcassets in Resources */,
 			);
@@ -249,6 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D4F18F191A5DAF0042B66B /* Hello.m in Sources */,
+				67D4F18C191A5D4F0042B66B /* HelloTestCase.m in Sources */,
 				67D4F177191A47FB0042B66B /* TestFirstObjectiveCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
