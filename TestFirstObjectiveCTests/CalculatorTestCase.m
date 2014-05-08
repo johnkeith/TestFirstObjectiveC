@@ -11,6 +11,10 @@
 
 @interface CalculatorTestCase : XCTestCase
 
+// so it looks like you can create an instance of an object by declaring it as a property? need to go back and do this for temp and hello tests as well, if this is correct...
+
+@property (strong) Calculator *calc;
+
 @end
 
 @implementation CalculatorTestCase
@@ -19,6 +23,7 @@
 {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    _calc = [[Calculator alloc] init];
 }
 
 - (void)tearDown
@@ -61,13 +66,12 @@
 //    * `[factorial](http://en.wikipedia.org/wiki/Factorial)` (check Wikipedia if you forgot your high school math).
 
 - (void)testAddMethod {
-    Calculator *calc = [[Calculator alloc] init];
 
-    XCTAssertEqualObjects([calc add:@0 :@0], @0, @"Should be none!");
+    XCTAssertEqualObjects([_calc add:@0 :@0], @0, @"Should be none!");
     
-    XCTAssertEqualObjects([calc add:@2 :@2], @4, @"Should be equal to 4!");
+    XCTAssertEqualObjects([_calc add:@2 :@2], @4, @"Should be equal to 4!");
     
-    XCTAssertEqualObjects([calc add:@2 :@6], @8, @"Should be equal to 8!");
+    XCTAssertEqualObjects([_calc add:@2 :@6], @8, @"Should be equal to 8!");
 }
 - (void)testSubtractMethod {
     Calculator *calc = [[Calculator alloc] init];
@@ -75,30 +79,26 @@
 }
 
 - (void)testSumMethod {
-    Calculator *calc = [[Calculator alloc] init];
 // why no nil at the end of this array?
     NSArray *testArray = @[@1,@3,@5,@7,@9];
-    XCTAssertEqualObjects([calc sum:testArray], @25, @"Should be equal to 25!");
+    XCTAssertEqualObjects([_calc sum:testArray], @25, @"Should be equal to 25!");
 }
 - (void)testMultiplyMethod {
-    Calculator *calc = [[Calculator alloc] init];
-    
     NSArray *testArray01 = @[@2, @4];
     NSArray *testArray02 = @[@2, @4, @2];
     
-    XCTAssertEqualObjects([calc multiply:testArray01], @8, @"Should be equal to 8!");
-    XCTAssertEqualObjects([calc multiply:testArray02], @16, @"Should be equal to 16!");
+    XCTAssertEqualObjects([_calc multiply:testArray01], @8, @"Should be equal to 8!");
+    XCTAssertEqualObjects([_calc multiply:testArray02], @16, @"Should be equal to 16!");
 }
 - (void)testPowerMethod {
-    Calculator *calc = [[Calculator alloc] init];
-    XCTAssertEqualObjects([calc power:@3 :@2], @9, @"Should be equal to 9!");
+    XCTAssertEqualObjects([_calc power:@3 :@2], @9, @"Should be equal to 9!");
 }
 - (void)testFactorialMethod {
-    Calculator *calc = [[Calculator alloc] init];
-    XCTAssertEqualObjects([calc factorial:@1], @1, @"Should be equal to 1!");
-    XCTAssertEqualObjects([calc factorial:@2], @2, @"Should be equal to 2!");
-    XCTAssertEqualObjects([calc factorial:@5], @120, @"Should be equal to 120!");
-    XCTAssertEqualObjects([calc factorial:@10], @3628800, @"Should be equal to 3628800!");
+    
+    XCTAssertEqualObjects([_calc factorial:@1], @1, @"Should be equal to 1!");
+    XCTAssertEqualObjects([_calc factorial:@2], @2, @"Should be equal to 2!");
+    XCTAssertEqualObjects([_calc factorial:@5], @120, @"Should be equal to 120!");
+    XCTAssertEqualObjects([_calc factorial:@10], @3628800, @"Should be equal to 3628800!");
 }
 
 @end

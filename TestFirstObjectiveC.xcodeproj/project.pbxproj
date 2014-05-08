@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		674C9AD1191BBA1B00534D57 /* HelloTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 674C9AD0191BBA1B00534D57 /* HelloTestCase.m */; };
 		674C9AD4191BBA3100534D57 /* Hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 674C9AD3191BBA3100534D57 /* Hello.m */; };
+		674C9AD6191BFAF900534D57 /* SimonSaysTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 674C9AD5191BFAF900534D57 /* SimonSaysTestCase.m */; };
+		674C9AD9191C035D00534D57 /* SimonSays.m in Sources */ = {isa = PBXBuildFile; fileRef = 674C9AD8191C035D00534D57 /* SimonSays.m */; };
 		67D4F152191A47FA0042B66B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D4F151191A47FA0042B66B /* Foundation.framework */; };
 		67D4F154191A47FA0042B66B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D4F153191A47FA0042B66B /* CoreGraphics.framework */; };
 		67D4F156191A47FA0042B66B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D4F155191A47FA0042B66B /* UIKit.framework */; };
@@ -42,6 +44,9 @@
 		674C9AD0191BBA1B00534D57 /* HelloTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloTestCase.m; sourceTree = "<group>"; };
 		674C9AD2191BBA3100534D57 /* Hello.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hello.h; sourceTree = "<group>"; };
 		674C9AD3191BBA3100534D57 /* Hello.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hello.m; sourceTree = "<group>"; };
+		674C9AD5191BFAF900534D57 /* SimonSaysTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimonSaysTestCase.m; sourceTree = "<group>"; };
+		674C9AD7191C035D00534D57 /* SimonSays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimonSays.h; sourceTree = "<group>"; };
+		674C9AD8191C035D00534D57 /* SimonSays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimonSays.m; sourceTree = "<group>"; };
 		67D4F14E191A47FA0042B66B /* TestFirstObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFirstObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D4F151191A47FA0042B66B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		67D4F153191A47FA0042B66B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,6 +140,8 @@
 				67E0370E191A89E500BF260D /* Temperature.m */,
 				67E03712191ADBE900BF260D /* Calculator.h */,
 				67E03713191ADBE900BF260D /* Calculator.m */,
+				674C9AD7191C035D00534D57 /* SimonSays.h */,
+				674C9AD8191C035D00534D57 /* SimonSays.m */,
 			);
 			path = TestFirstObjectiveC;
 			sourceTree = "<group>";
@@ -153,6 +160,7 @@
 		67D4F170191A47FB0042B66B /* TestFirstObjectiveCTests */ = {
 			isa = PBXGroup;
 			children = (
+				674C9AD5191BFAF900534D57 /* SimonSaysTestCase.m */,
 				67E03715191ADC8C00BF260D /* CalculatorTestCase.m */,
 				67E03710191A89F700BF260D /* TemperatureTestCase.m */,
 				674C9AD0191BBA1B00534D57 /* HelloTestCase.m */,
@@ -272,6 +280,7 @@
 				67E03714191ADBE900BF260D /* Calculator.m in Sources */,
 				67D4F162191A47FB0042B66B /* TFOAppDelegate.m in Sources */,
 				674C9AD4191BBA3100534D57 /* Hello.m in Sources */,
+				674C9AD9191C035D00534D57 /* SimonSays.m in Sources */,
 				67D4F15E191A47FB0042B66B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				674C9AD1191BBA1B00534D57 /* HelloTestCase.m in Sources */,
+				674C9AD6191BFAF900534D57 /* SimonSaysTestCase.m in Sources */,
 				67E03716191ADC8C00BF260D /* CalculatorTestCase.m in Sources */,
 				67E03711191A89F700BF260D /* TemperatureTestCase.m in Sources */,
 				67D4F177191A47FB0042B66B /* TestFirstObjectiveCTests.m in Sources */,
