@@ -10,4 +10,32 @@
 
 @implementation SimonSays
 
+- (NSString *)echoString:(NSString *)word {
+    
+}
+
+- (NSString *)shoutString:(NSString *)word {
+    
+}
+
+- (NSString *)repeat:(NSString *)word {
+    
+}
+
+- (NSString *)repeatStringNumberOfTimes:(NSString *)word :(NSNumber *)times {
+    
+}
+
+- (NSString *)startOfWord:(NSString *)word :(NSNumber *)characters {
+    
+}
+
+- (NSString *)firstWord:(NSString *)word {
+    
+}
+
+- (NSString *)titilize:(NSString *)title {
+    
+}
+
 @end
