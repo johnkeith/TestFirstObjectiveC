@@ -20,7 +20,7 @@
 
 - (NSString *)startOfWord:(NSString *)word :(NSNumber *)characters;
 
-- (NSString *)firstWord:(NSString *)word;
+- (NSString *)firstWord:(NSString *)string;
 
 - (NSString *)titilize:(NSString *)title;
 

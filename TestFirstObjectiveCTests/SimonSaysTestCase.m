@@ -54,7 +54,7 @@
 }
 
 - (void)testRepeatMethods {
-    XCTAssertEqualObjects([_simon repeat:@"hello"], @"hello", @"should repeat");
+    XCTAssertEqualObjects([_simon repeat:@"hello"], @"hello hello", @"should repeat");
     XCTAssertEqualObjects([_simon repeatStringNumberOfTimes:@"hello" :@3], @"hello hello hello", @"should repeat a number of times");
 }
 
@@ -64,7 +64,7 @@
     
     NSString *s = @"abcdefg";
     
-    XCTAssertEqualObjects([_simon startOfWord:s :@2], @"abc", @"returns the first several letters");
+    XCTAssertEqualObjects([_simon startOfWord:s :@3], @"abc", @"returns the first several letters");
 }
 
 - (void)testFirstWordMethod {
